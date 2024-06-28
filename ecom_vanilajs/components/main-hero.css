@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+.grid{
+    display: grid;
+    
+}
+.display{
+    display: grid;
+    text-align: center;
+}
+.grid__two-columns{
+    grid-template-columns: repeat(3,min(300px,1fr));
+    
+}
+.grid__three-columns{
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    
+
+}
+.main__hero-container{
+    background-image: linear-gradient(60deg,#3ABEF9,#A7E6FF);
+}
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.main__text{
+    display: none;
+}
+
+
+@media all and (min-width:320px){
+
+}
+@media all and (min-width:480px){
+    
+   
+
+}
+@media all and (min-width:768px){
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .main__text{
+        width: 50%;
+        font-size: .7rem;
+        display: block;
+    
+        
+        
+    }
+    .main__text>p{
+        font-family: "Playwrite DE Grund", cursive;
+        font-size:.8rem;
+    
+    }
+    .grid__three-columns{
+        grid-template-columns: repeat(3,15rem);
+        justify-content: center;
+        
+    
+    }
+}
+@media all and (min-width:1024px){
+
+}
+@media all  and (min-width:1280px){
+    .grid__three-columns{
+        grid-template-columns: repeat(3,18rem);
+        justify-content: center;
+        
+    
+    }
+}
+@media all and (min-width:1440px){
+
+
+}
+@media all and (min-width:1563px){
+    .grid__three-columns{
+        grid-template-columns: repeat(3,22rem);
+        justify-content: center;
+        
+    
+    }
+}
